@@ -6,5 +6,8 @@
   "permissions": ["storage", "bookmarks", "tabs", "activeTab"],
   "action": {
     "default_popup": "popup.html"
+  },
+  "icons": {
+    "48": "icons/icon48.png"
   }
 }
