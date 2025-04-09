@@ -1,0 +1,10 @@
+{
+  "manifest_version": 3,
+  "name": "Easy Bookmark Manager",
+  "version": "1.0",
+  "description": "A simple extension to manage your bookmarks",
+  "permissions": ["storage", "bookmarks", "tabs", "activeTab"],
+  "action": {
+    "default_popup": "popup.html"
+  }
+}

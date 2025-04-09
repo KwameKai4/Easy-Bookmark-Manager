@@ -1,0 +1,219 @@
+body {
+    width: 420px;
+    min-height: 320px;
+    padding: 24px;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(145deg, #f8f9fa 0%, #e9ecef 100%);
+    color: #343a40;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.mui-typography-h6 {
+    font-size: 1.4rem;
+    margin: 0 0 8px 0;
+    color: #2b6cb0;
+    text-align: center;
+    font-weight: 600;
+    letter-spacing: -0.5px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.form-group {
+    margin: 0;
+}
+
+.mui-textfield {
+    width: 100%;
+    position: relative;
+}
+
+.mui-textfield input {
+    width: 100%;
+    padding: 14px;
+    border: 2px solid #e2e8f0;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 15px;
+    background: white;
+    transition: all 0.2s ease;
+}
+
+.mui-textfield input:focus {
+    outline: none;
+    border-color: #4299e1;
+    box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.15);
+}
+
+.mui-button {
+    width: 100%;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: all 0.2s ease;
+    letter-spacing: 0.5px;
+}
+
+.mui-button-contained {
+    background-color: #2b6cb0;
+    color: white;
+    box-shadow: 0 2px 4px rgba(43, 108, 176, 0.2);
+}
+
+.mui-button-contained:hover {
+    background-color: #2c5282;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 6px rgba(43, 108, 176, 0.25);
+}
+
+.mui-button-text {
+    background-color: transparent;
+    color: #1976d2;
+}
+
+.mui-button-text:hover {
+    background-color: rgba(25, 118, 210, 0.04);
+}
+
+.search-container {
+    position: relative;
+}
+
+.search-container .material-icons {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #666;
+}
+
+.search-container input {
+    padding-left: 40px;
+}
+
+.bookmarks-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-height: 380px;
+    overflow-y: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.bookmarks-list::-webkit-scrollbar {
+    width: 8px;
+}
+
+.bookmarks-list::-webkit-scrollbar-track {
+    background: #f1f5f9;
+    border-radius: 4px;
+}
+
+.bookmarks-list::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 4px;
+}
+
+.bookmarks-list::-webkit-scrollbar-thumb:hover {
+    background: #94a3b8;
+}
+
+.bookmark-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    background-color: #f8fafc;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+    transition: all 0.2s ease;
+}
+
+.bookmark-item:hover {
+    background-color: #f1f5f9;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.bookmark-info {
+    flex-grow: 1;
+    margin-right: 16px;
+    cursor: pointer;
+}
+
+.bookmark-title {
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: #1a202c;
+    font-size: 1.05rem;
+}
+
+.bookmark-url {
+    color: #4a5568;
+    font-size: 0.9rem;
+    word-break: break-all;
+    line-height: 1.4;
+}
+
+.delete-btn {
+    min-width: 42px;
+    height: 42px;
+    padding: 8px;
+    border: none;
+    border-radius: 21px;
+    background-color: transparent;
+    color: #e53e3e;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+    opacity: 0.8;
+}
+
+.delete-btn:hover {
+    background-color: #fff5f5;
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+.material-icons {
+    font-size: 20px;
+}
